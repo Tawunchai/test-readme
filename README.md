@@ -35,7 +35,19 @@ npm install --force
 
 - More Installation for Source Code
 ```bash
-npm install --force
+npm install react-router-dom
+npm install react-webcam jsqr
+npm install @zxing/library
+npm install promptpay-qr
+npm install @fortawesome/fontawesome-svg-core
+npm install jsbarcode
+npm install react-rnd
+npm install normalize.css
+npm install @fortawesome/free-solid-svg-icons
+npm install @fortawesome/react-fontawesome
+npm install date-fns
+คำเเนะนำ : npm install <package-name> --legacy-peer-deps or --force
+    -ใช้เมื่อมีปัญหา peer dependency conflict โดยบังคับให้ npm
 ```
 
 - test Frontend
