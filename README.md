@@ -1,4 +1,4 @@
-# Team05 Project
+# Software Engineer Project G18 SEC2
 
 ## สมาชิกทีม
 
