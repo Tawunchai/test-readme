@@ -14,7 +14,8 @@
 
 - clone Git repository 
 
-```git clone git@github.com:sut67/teamxx.git
+```bash
+git clone git@github.com:sut67/teamxx.git
 ```
 
 ## Backend 
@@ -76,8 +77,8 @@ git push origin main
 - Other Git Command
 
 ```bash
-git remote update
-git rebase origin/main
+git remote update : ดึงข้อมูลเกี่ยวกับ Branch และ Commit ล่าสุดจาก Remote
+git rebase origin/main : ทำให้ brach ปัจจุบัน มี code เทียบเท่า branch Main
 ----------
 git init : สร้าง Git Repository ใหม่ในโฟลเดอร์ปัจจุบัน
 Git status : เเสดงสถานะของ branch ปัจจุบัน
