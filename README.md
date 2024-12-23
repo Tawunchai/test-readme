@@ -2,78 +2,78 @@
 
 ## สมาชิกทีม
 
-- **B6509644** นายธนรัตน์ วิตันติวงศ์
-- **B6526399** นายสิทธิโชค เชยงูเหลือม
-- **B6513214** นายรามณรงค์ พันธเดช
-- **B6506919** นายณัฐวุฒิ ถินราช
-- **B6526221** นายณัฐวุฒิ สำรวมจิตต์
+- **B6504359** นายณัฐกุล สมานใจ
+- **B6512651** นายรัฐพล ผลไธสง
+- **B6534240** นายตะวันฉาย บุราคร
+- **B6534721** นางสาวกัญญาพร ขุนเดช
+- **B6515683** นางสาวจณิสตา ตั้งกระจ่างจิตร
+- **B6328726** นายสหพล แสนพวง
 
 ---
 
-## Backend Version Control
+## Backend 
 
-```go
-go mod init github.com/team05
-go get -u github.com/gin-gonic/gin
-go get -u gorm.io/gorm
-go get -u gorm.io/driver/sqlite
-go get -u github.com/dgrijalva/jwt-go
-go get -u golang.org/x/crypto@v0.16.0
-```
-
-- ทดสอบ backend
+- test backend
 
 ```go
 go mod tidy
 go run main.go
 ```
 
-## Frontend Version Control
+## Frontend 
 
 ```bash
-npm create vite@latest Frontend
-npm install
-npm install --save react-router-dom@6.x
-npm install antd --save
-npm instal axios --save
-npm instal dayjs --save
-npm install antd-img-crop --save
+npm install --force
 ```
 
-- ทดสอบ Frontend
+- More Installation
+```bash
+npm install --force
+```
+
+- test Frontend
 
 ```bash
 npm run dev
 ```
 
-## Git Command
+## Git Command Version Control
 
-- สร้าง brach ใหม่
+- Branch
 
 ```bash
+git branch
+git checkout issue-xx
 git checkout -b issue-XX
 ```
 
-- ดึง code จาก main มา update issue
+- Pull Source Code
 
 ```bash
-git fetch origin main
+git fetch 
 git pull origin main
 ```
 
-- ทำ Todo เสร็จ
+- Megre branch issue-xx to branch Main
 
 ```bash
+git checkout -b issue-xx
 git add .
-git commit -m "ข้อความ - close #XX"
-git push origin issue-XX
+git commit -m "comment - close #xx"
+git push origin issue-xx
+-------------------------
+git checkout main
+git merge issue-xx --no-ff
+git push origin main
 ```
 
-- หากอยาก update code โดยไม่ให้ Git Graph เยอะ
+- Other Git Command
 
 ```bash
 git remote update
 git rebase origin/main
+----------
+git log
 ```
 
 - อื่นๆ
