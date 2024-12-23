@@ -10,6 +10,12 @@
 - **B6328726** นายสหพล แสนพวง
 
 ---
+## Github team18
+
+- clone Git repository 
+
+```git clone git@github.com:sut67/teamxx.git
+```
 
 ## Backend 
 
@@ -26,7 +32,7 @@ go run main.go
 npm install --force
 ```
 
-- More Installation
+- More Installation for Source Code
 ```bash
 npm install --force
 ```
@@ -73,16 +79,19 @@ git push origin main
 git remote update
 git rebase origin/main
 ----------
-git log
+git init : สร้าง Git Repository ใหม่ในโฟลเดอร์ปัจจุบัน
+Git status : เเสดงสถานะของ branch ปัจจุบัน
+Git reset : ย้อนสถานะของไฟล์หรือ Commit กลับไปยังจุดก่อนหน้า
+Git merge : วมการเปลี่ยนแปลงจาก Branch อื่นเข้ามายัง Branch(Main) ปัจจุบัน
+Git tag : สร้าง Tag เพื่อระบุจุดสำคัญในประวัติ เช่น เวอร์ชันของโค้ด
+----
+Git Log : ดูประวัติ Commit ทั้งหมดใน Repository
+Git Log --graph : แสดงประวัติ Commit ในรูปแบบกราฟ
 ```
 
-- อื่นๆ
-
+- Advice
 ```bash
-git clone <url> # ดึง code จาก Git ลง vs.
-git init # เริ่มต้นสร้าง repository ใหม่ในโฟลเดอร์ปัจจุบัน โดยสร้าง .git
-git status # ตรวจสอบสถานะของ repository ปัจจุบัน
-git merge  # นำการเปลี่ยนแปลงจาก branch ที่เลือกมาไว้ใน branch ปัจจุบัน โดยจะแสดงประวัติบน git graph (เหมาะในการใช้ เอา code ลง main)
-git diff origin/main <issue-??> #ตรวจสอบความแตกต่างของ 2 branch
-
+ลงแค่สองตัวนี้ ตั้งค่า NPM ให้ข้ามการตรวจสอบ Peer Dependencies npm config set legacy-peer-deps true 
+ปิดการตรวจสอบ คำสั่งนี้จะทำให้ไม่ต้องใส่ --legacy-peer-deps ทุกครั้ง npm config set legacy-peer-deps false 
+เปิดการตรวจสอบ npm install
 ```
